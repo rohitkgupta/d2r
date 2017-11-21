@@ -1,0 +1,222 @@
+@charset /* Reset defaults (no need to edit)*/ "utf-8";html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-family:inherit;vertical-align:baseline}:focus{outline:0}ol,ul,li{list-style-type:none}table{border-collapse:separate;border-spacing:0}caption,th,td{text-align:left;font-weight:400}
+/* End Reset defaults (no need to edit above this line)*/
+
+/*Import Custom Styles */
+
+/**************************** Site Structure *****************************/
+
+/**************************** Typography *****************************/
+
+
+.no_display {display: none;}
+
+h1, h2, h3, h4 { font-family: 'Quicksand', sans-serif; } 
+
+h1 {font-size: 34px;  padding: 20px 0; color: #000 }
+
+h2, h3 {margin: 20px 0; color: #000; font-weight: normal; text-transform:normal}
+
+h2 {font-size: 2em}
+
+h3 {font-size: 2em}
+
+h4 {font-size: 1.2em; font-weight: 700}
+
+#container ul li {list-style:none}
+#container ol li {list-style: none}
+
+blockquote {font-family:Georgia, "Times New Roman", Times, serif; font-style: italic; margin: 10px 0}
+
+/* Lists *
+
+dt {font-size: 1.4em;}
+dd {margin-bottom: 30px; font-size: 1em; color: gray; border-bottom: 1px dotted gray; padding-bottom: 30px;}
+/**************************************************************************************/
+/*------------------------------------- Buttons -------------------------------------*/
+/************************************************************************************/
+
+
+/**************************************************************************************/
+/*-------------------------------------- pagination ---------------------------------*/
+/************************************************************************************/
+
+/**************************************************************************************/
+/*------------------------------------- Nivo Slider ---------------------------------*/
+/************************************************************************************/
+
+
+/**************************************************************************************/
+/*----------------------------------------- Tabs ------------------------------------*/
+/************************************************************************************/
+
+/**************************************************************************************/
+/*------------------------------------- Grid Homepage -------------------------------*/
+/************************************************************************************/
+
+/* ei slider */
+
+
+.ei-slider{
+	position: relative;
+	width: 84%;
+	max-width: 1920px;
+	border-bottom: 1px solid #EAEAEA;
+	height: 400px;
+	margin: 0 auto;
+}
+.ei-slider-loading{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index:999;
+	background: rgba(0,0,0,0.9);
+	color: #fff;
+	text-align: center;
+	line-height: 400px;
+}
+.ei-slider-large{
+	height: 100%;
+	width: 100%;
+	position:relative;
+	overflow: hidden;
+}
+.ei-slider-large li{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+}
+.ei-slider-large li img{
+	width: 100%;
+}
+.ei-title{
+	position: absolute;
+	right: 0%;
+	margin-right: 13%;
+	top: 3%;
+}
+.ei-title h2, .ei-title h3{
+	text-align: right;
+}
+.ei-title h2{
+	font-size: 30px;
+	line-height: 50px;
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	color: #0101DF;
+	background-color:rgba(252, 252, 252, 0.80);
+}
+.ei-title h3{
+	font-size: 30px;
+	line-height: 50px;
+	#font-family: 'Open Sans Condensed', sans-serif;
+	#text-transform: uppercase;
+	#color: #000000;
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	color: #FF0000;
+	background-color:rgba(252, 252, 252, 0.80);
+}
+.ei-slider-thumbs{
+	height: 7px;
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+.ei-slider-thumbs li{
+	position: relative;
+	float: left;
+	height: 100%;
+}
+.ei-slider-thumbs li.ei-slider-element{
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	height: 100%;
+	z-index: 10;
+	text-indent: -9000px;
+	background: #000;
+}
+.ei-slider-thumbs li a{
+	display: block;
+	text-indent: -9000px;
+	background: #eaeaea;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	-webkit-box-shadow: 
+        0px 1px 1px 0px rgba(0,0,0,0.3), 
+        0px 1px 0px 1px rgba(255,255,255,0.5);
+	-moz-box-shadow: 
+        0px 1px 1px 0px rgba(0,0,0,0.3), 
+        0px 1px 0px 1px rgba(255,255,255,0.5);
+	box-shadow: 
+        0px 1px 1px 0px rgba(0,0,0,0.3), 
+        0px 1px 0px 1px rgba(255,255,255,0.5);
+	-webkit-transition: background 0.2s ease;
+    -moz-transition: background 0.2s ease;
+    -o-transition: background 0.2s ease;
+    -ms-transition: background 0.2s ease;
+    transition: background 0.2s ease;
+}
+.ei-slider-thumbs li a:hover{
+	background-color: #f0f0f0;
+}
+.ei-slider-thumbs li img{
+	position: absolute;
+	bottom: 50px;
+	opacity: 0;
+	z-index: 999;
+	max-width: 100%;
+	-webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+	-webkit-box-reflect: 
+        below 0px -webkit-gradient(
+            linear, 
+            left top, 
+            left bottom, 
+            from(transparent), 
+            color-stop(50%, transparent), 
+            to(rgba(255,255,255,0.3))
+            );
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.ei-slider-thumbs li:hover img{
+	opacity: 1;
+	bottom: 13px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+@media screen and (max-width: 830px) {
+	.ei-title{
+		position: absolute;
+		right: 0px;
+		margin-right: 0px;
+		width: 100%;
+		text-align: center;
+		top: auto;
+		bottom: 10px;
+		background: #fff;
+		background: rgba(255,255,255,0.9);
+		padding: 5px 0;
+	}
+	.ei-title h2, .ei-title h3{
+		text-align: center;
+	}
+	.ei-title h2{
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.ei-title h3{
+		font-size: 30px;
+		line-height: 40px;
+	}
+}
+
+
